@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/bgcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Here"
+        android:textSize="25dp"
+        android:layout_marginRight="@dimen/mr"
+        android:layout_marginLeft="@dimen/ml"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginRight="@dimen/mr"
+        android:layout_marginLeft="@dimen/ml"
+        android:hint="Enter username"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="351dp"
+            android:layout_height="match_parent"
+            android:ems="25" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginRight="@dimen/mr"
+        android:layout_marginLeft="@dimen/ml"
+        android:hint="Enter password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="352dp"
+            android:layout_height="match_parent"
+            android:ems="25"
+            android:inputType="textPassword" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginRight="@dimen/mr"
+        android:layout_marginLeft="@dimen/ml"
+        android:hint="Re Enter password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repassword"
+            android:layout_width="352dp"
+            android:layout_height="match_parent"
+            android:ems="25"
+            android:inputType="textPassword" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/mr"
+        android:layout_marginLeft="@dimen/ml"
+        android:id="@+id/btnregi"
+        android:text="Create Account"
+        android:backgroundTint="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_form"
+        android:text="Already have an account"
+        android:layout_gravity="end"
+        android:layout_marginLeft="@dimen/ml"
+        android:layout_marginRight="@dimen/mr"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
