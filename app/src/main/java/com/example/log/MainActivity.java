@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     DBmain dBmain;
     SQLiteDatabase sqLiteDatabase;
 
+    //Oncreate methods
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
