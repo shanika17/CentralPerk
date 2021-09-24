@@ -9,6 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
+
+        <activity 
+            android:name=".RoomUpdateActivity"
+      ></activity>
+        <activity
+            android:name=".RoomAddActivity"
+            android:label="Book a Room"
+            android:parentActivityName=".RoomActivity" />
+        <activity
+            android:name=".RoomListActivity"
+            android:label="My Bookings"
+            android:parentActivityName=".RoomActivity" />
+
         <activity
             android:name=".FoodUpdateActivity"
             android:parentActivityName=".FoodList"
