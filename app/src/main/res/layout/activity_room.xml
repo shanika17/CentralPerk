@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".RoomActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="208dp"
-        android:text="roomtest"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="185dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
