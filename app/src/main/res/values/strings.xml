@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">log</string>
+    ///food
+    <string name="btn_orders">My Orders</string>
+    <string name="btn_addOrder">Order Now</string>
+    <string name="txt_roomNo">Room :</string>
+    <string name="no_orders_to_show">No orders to show</string>
+    <string name="delete_all_food">Remove all orders</string>
+    <string name="orders_input">Enter your order</string>
+    <string name="request_input">Special requests</string>
+    <string name="room_no_input">Enter room No</string>
+    <string name="payment_method_input">Enter payment method</string>
+    <string name="add_food_button">Place Order</string>
+    <string name="update_food_button">Update Order</string>
+    <string name="delete_food_button">Remove Order</string>
+
+    <string name="food_1">Pizza</string>
+    <string name="description_1">aaaaa</string>
+    <string name="price_1">Rs.560.00</string>
+    <string name="food_2">Fried Rice</string>
+    <string name="description_2">bbbbb</string>
+    <string name="price_2">Rs.570.00</string>
+    <string name="food_3">ice cream</string>
+    <string name="description_3">with cheese</string>
+    <string name="price_3">Rs.580.00</string>
+    <string name="food_4">chocolate</string>
+    <string name="description_4">with cheese</string>
+    <string name="price_4">Rs.590.00</string>
+    <string name="food_5">biriyani</string>
+    <string name="description_5">with cheese</string>
+    <string name="price_5">Rs.350.00</string>
+    <string name="food_6">sandwich</string>
+    <string name="description_6">with cheese</string>
+    <string name="price_6">Rs.160.00</string>
+    <string name="food_7">coffee</string>
+    <string name="description_7">with cheese</string>
+    <string name="price_7">Rs.460.00</string>
+
 </resources>
