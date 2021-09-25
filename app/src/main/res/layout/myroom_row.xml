@@ -57,7 +57,7 @@
                 android:id="@+id/adults_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adults"
+                android:text="2"
                 android:textColor="#000"
                 app:layout_constraintStart_toStartOf="@+id/facilities_txt"
                 app:layout_constraintTop_toBottomOf="@+id/facilities_txt" />
@@ -66,7 +66,7 @@
                 android:id="@+id/children_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Children"
+                android:text="3"
                 android:textColor="#000"
                 app:layout_constraintStart_toStartOf="@+id/adults_txt"
                 app:layout_constraintTop_toBottomOf="@+id/adults_txt" />
@@ -88,9 +88,9 @@
                 android:id="@+id/tv_adults"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="260dp"
-                android:textColor="#000"
+                android:layout_marginEnd="232dp"
                 android:text="@string/tv_adults"
+                android:textColor="#000"
                 app:layout_constraintBaseline_toBaselineOf="@+id/adults_txt"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -98,9 +98,9 @@
                 android:id="@+id/tv_children"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="248dp"
-                android:textColor="#000"
+                android:layout_marginEnd="220dp"
                 android:text="@string/tv_children"
+                android:textColor="#000"
                 app:layout_constraintBaseline_toBaselineOf="@+id/children_txt"
                 app:layout_constraintEnd_toEndOf="parent" />
 

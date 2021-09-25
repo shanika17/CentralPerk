@@ -50,12 +50,12 @@ public class DBmain extends SQLiteOpenHelper {
     //private static final int DATABASE_VERSION = 1;//added
 
 //food
-    private static final String TABLE_NAME_FOOD = "food";
+    /*private static final String TABLE_NAME_FOOD = "food";
     //private static final String COLUMN_ID = "_id"; /////***
     private static final String COLUMN_ORDERS = "orders";
     private static final String COLUMN_REQUEST = "request";
     private static final String COLUMN_ROOM_NO = "room_no";
-    private static final String COLUMN_PAYMENT_METHOD = "payment_method";
+    private static final String COLUMN_PAYMENT_METHOD = "payment_method";*/
 ////
 
 //user
@@ -117,10 +117,10 @@ public class DBmain extends SQLiteOpenHelper {
                 COLUMN_CHILDREN + " TEXT, " +
                 COLUMN_DAYS + " TEXT);";
 
-        //db.execSQL(queryUser);
+        db.execSQL(queryUser);
         db.execSQL(queryRoom);
 
-        String queryFood = "CREATE TABLE " + TABLE_NAME_FOOD +
+        /*String queryFood = "CREATE TABLE " + TABLE_NAME_FOOD +
                 " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_ORDERS + " TEXT, " +
                 COLUMN_REQUEST + " TEXT, " +
@@ -128,7 +128,7 @@ public class DBmain extends SQLiteOpenHelper {
                 COLUMN_PAYMENT_METHOD + " TEXT);";
 
         db.execSQL(queryUser);
-        db.execSQL(queryFood);
+        db.execSQL(queryFood);*/
 
 
 
@@ -150,7 +150,7 @@ public class DBmain extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) { //public void onUpgrade(SQLiteDatabase db, int i, int i1)
         //db.execSQL("drop table if exists users");
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_USER);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_FOOD);
+        //db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_FOOD);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_ROOM);
 
 
@@ -234,16 +234,18 @@ public class DBmain extends SQLiteOpenHelper {
 
     }
 
-    void deleteOneBooking(String row_id){
+    void deleteOneBooking(String row_id) {
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(TABLE_NAME_ROOM, "_id=?", new String[]{row_id});
 
-        if(result == -1){
+        if (result == -1) {
             Toast.makeText(context, "Failed to Delete.", Toast.LENGTH_SHORT).show();
-        }else{
+        } else {
             Toast.makeText(context, "Successfully Deleted.", Toast.LENGTH_SHORT).show();
+        }
+    }
 
-    void addFood(String orders, String request, String room_no, String payment_method){
+    /*void addFood(String orders, String request, String room_no, String payment_method){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -258,9 +260,9 @@ public class DBmain extends SQLiteOpenHelper {
         }else{
             Toast.makeText(context, "Order placed successfully", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 
-    Cursor readAllFood(){
+    /*Cursor readAllFood(){
         String query = "SELECT * FROM " + TABLE_NAME_FOOD;
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -325,7 +327,7 @@ public class DBmain extends SQLiteOpenHelper {
 
         }
 
-    }
+    }*/
 
 
         }
@@ -336,14 +338,14 @@ public class DBmain extends SQLiteOpenHelper {
     void deleteAllBookings() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE_NAME_ROOM);
+    }
 
-    void deleteAllFood(){
+    /*void deleteAllFood(){
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE_NAME_FOOD);
 
+    }*/
 
-    void deleteAllEvents(){
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DELETE FROM " + TABLE_NAME_EVENT);
-    }
+
+  
 }

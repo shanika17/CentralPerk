@@ -43,4 +43,12 @@
     <string name="tv_children">: Children</string>
     <string name="tv_days">Days</string>
 
+    <string name="btn_myBookings">My Bookings</string>
+    <string name="btn_bookRoom">Book a Room</string>
+    <string name="tv_topic">Welcome to CentralPerk Room Services</string>
+    <string name="tv_welcomeNote">The best holidays start here!</string>
+    <string name="tv_singleRoom">Single Room</string>
+    <string name="tv_superior">Seperior Twin</string>
+    <string name="tv_deluxe">Deluxe Ocean View</string>
+
 </resources>

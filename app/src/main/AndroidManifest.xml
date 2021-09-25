@@ -34,20 +34,12 @@
             android:parentActivityName=".OfferActivity"
             android:exported="true" />
         <activity
-            android:name=".FoodUpdateActivity"
-            android:exported="true"
-            android:parentActivityName=".FoodList" />
-        <activity
-            android:name=".FoodAddActivity"
-            android:exported="true"
-            android:label="Add Order"
-            android:parentActivityName=".FoodList" />
 
-            android:name=".RoomUpdateActivity"
-            android:parentActivityName=".RoomListActivity"></activity>
-        <activity
             android:name=".RoomAddActivity"
-            android:label="Book a Room"
+            android:parentActivityName=".RoomListActivity"
+            android:label="Book a Room"/>
+        <activity
+            android:name=".RoomUpdateActivity"
             android:parentActivityName=".RoomListActivity" />
 
         <activity
