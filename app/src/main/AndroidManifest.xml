@@ -9,22 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
-        <activity android:name=".OfferActivity"
+        <activity android:name=".SpaAddActivity"
+            android:label="Add Details"
+            android:parentActivityName=".SpaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".OfferActivity"
             android:label="Special Offers"
             android:parentActivityName=".Welcome" />
-
-        <activity android:name=".SpaActivity"
+        <activity
+            android:name=".SpaActivity"
             android:label="Spa Treatments"
-            android:parentActivityName=".Welcome"/>
-        <activity android:name=".FoodActivity"
+            android:parentActivityName=".Welcome" />
+        <activity
+            android:name=".FoodActivity"
             android:label="Food"
-            android:parentActivityName=".Welcome"/>
-        <activity android:name=".EventActivity"
+            android:parentActivityName=".Welcome" />
+        <activity
+            android:name=".EventActivity"
             android:label="Events"
-            android:parentActivityName=".Welcome"/>
-        <activity android:name=".RoomActivity"
+            android:parentActivityName=".Welcome" />
+        <activity
+            android:name=".RoomActivity"
             android:label="Rooms"
-            android:parentActivityName=".Welcome"/>
+            android:parentActivityName=".Welcome" />
         <activity android:name=".Welcome" />
         <activity android:name=".LoginForm" />
         <activity android:name=".MainActivity">
