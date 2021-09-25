@@ -3,12 +3,28 @@
     package="com.example.log">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Central Perk"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
+
+
+        <activity
+            android:name=".EventUpdateActivity"
+            android:parentActivityName=".EventActivity"/>
+        <activity
+            android:name=".EventAddActivity"
+            android:label="Add Event"
+            android:parentActivityName=".EventActivity"/>
+        <activity
+            android:name=".EventActivity"
+            android:label="Events"
+            android:parentActivityName=".Welcome"/>
+
+
         <activity android:name=".OfferActivity"
             android:label="Special Offers"
             android:parentActivityName=".Welcome" />
@@ -19,18 +35,19 @@
         <activity android:name=".FoodActivity"
             android:label="Food"
             android:parentActivityName=".Welcome"/>
-        <activity android:name=".EventActivity"
-            android:label="Events"
-            android:parentActivityName=".Welcome"/>
+
         <activity android:name=".RoomActivity"
             android:label="Rooms"
             android:parentActivityName=".Welcome"/>
         <activity android:name=".Welcome" />
         <activity android:name=".LoginForm" />
         <activity android:name=".MainActivity">
+
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

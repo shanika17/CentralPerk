@@ -31,9 +31,9 @@ public class EventActivity extends AppCompatActivity {
     ImageView empty_imageview;
     TextView no_data;
 
-    MyDatabaseHelper myDatabaseHelper;
+    DBmain myDatabaseHelper;
     ArrayList<String> event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, noOfRooms, requirements;
-    CustomAdapter customAdapter;
+    EventCustomAdapter customAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +45,11 @@ public class EventActivity extends AppCompatActivity {
         empty_imageview = findViewById(R.id.empty_imageview);
         no_data = findViewById(R.id.no_data);
         add_event_button.setOnClickListener((v -> {
-            Intent intent = new Intent(EventActivity.this, AddEventActivity.class);
+            Intent intent = new Intent(EventActivity.this, EventAddActivity.class);
             startActivity(intent);
         }));
 
-        myDatabaseHelper = new MyDatabaseHelper(EventActivity.this);
+        myDatabaseHelper = new DBmain(EventActivity.this);
         event_id = new ArrayList<>();
         name = new ArrayList<>();
         email = new ArrayList<>();
@@ -63,7 +63,7 @@ public class EventActivity extends AppCompatActivity {
         storeDataInArray();
 
         //this**
-        customAdapter = new CustomAdapter(EventActivity.this, this, event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, noOfRooms, requirements);
+        customAdapter = new EventCustomAdapter(EventActivity.this, this, event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, noOfRooms, requirements);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(EventActivity.this));
 
@@ -79,7 +79,7 @@ public class EventActivity extends AppCompatActivity {
     }
 
     void storeDataInArray() {
-        Cursor cursor = myDatabaseHelper.readAllData();
+        Cursor cursor = myDatabaseHelper.readAllEvents();
         if(cursor.getCount() == 0) {
             empty_imageview.setVisibility(View.VISIBLE);
             no_data.setVisibility(View.VISIBLE);
@@ -105,7 +105,7 @@ public class EventActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.my_menu, menu);
+        inflater.inflate(R.menu.event_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -128,8 +128,8 @@ public class EventActivity extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(EventActivity.this);
-                myDB.deleteAllData();
+                DBmain myDB = new DBmain(EventActivity.this);
+                myDB.deleteAllEvents();
                 //Refresh activity
                 Intent intent = new Intent(EventActivity.this, EventActivity.class);
                 startActivity(intent);
