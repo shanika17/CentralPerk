@@ -14,26 +14,27 @@
     <string name="update_food_button">Update Order</string>
     <string name="delete_food_button">Remove Order</string>
 
-    <string name="food_1">Pizza</string>
-    <string name="description_1">aaaaa</string>
-    <string name="price_1">Rs.560.00</string>
-    <string name="food_2">Fried Rice</string>
-    <string name="description_2">bbbbb</string>
-    <string name="price_2">Rs.570.00</string>
-    <string name="food_3">ice cream</string>
-    <string name="description_3">with cheese</string>
-    <string name="price_3">Rs.580.00</string>
-    <string name="food_4">chocolate</string>
-    <string name="description_4">with cheese</string>
-    <string name="price_4">Rs.590.00</string>
-    <string name="food_5">biriyani</string>
-    <string name="description_5">with cheese</string>
-    <string name="price_5">Rs.350.00</string>
-    <string name="food_6">sandwich</string>
-    <string name="description_6">with cheese</string>
-    <string name="price_6">Rs.160.00</string>
-    <string name="food_7">coffee</string>
-    <string name="description_7">with cheese</string>
-    <string name="price_7">Rs.460.00</string>
+
+    <string name="topic_app">Appetizers</string>
+    <string name="txt_app">French Fries\tRs.320.00\t\t\tGarlic Bread\tRs.450.00\nPizza Fries\tRs.650.00\t\t\tSpicy Sausage\tRs.570.00</string>
+
+    <string name="topic_sal">Salads</string>
+    <string name="txt_sal">Chinese Salad\tRs.670.00\t\t\Green Salad\tRs.380.00\nPasta Salad\tRs.720.00\t\t\tTomato Salad\tRs.450.00</string>
+
+    <string name="topic_soup">Soups</string>
+    <string name="txt_soup">Creamy Potato\tRs.520.00\t\t\tVege Soup\tRs.460.00\nChicken Soup\tRs.430.00\t\t\tNoodle Soup\tRs.320.00</string>
+
+    <string name="topic_meal">Main Meals</string>
+    <string name="txt_meal">Fried Rice\tRs.320.00\t\t\tRice n Curry\tRs.250.00\nChicken Noodles\tRs.400.00\t\t\tKoththu \tRs.420.00</string>
+
+    <string name="topic_des">Desserts</string>
+    <string name="txt_des">Ice Cream\tRs.150.00\t\t\tChocolate Pie\tRs.320.00\nWatalappam\tRs.130.00\t\t\tCheesecake\tRs.340.00</string>
+
+    <string name="topic_bev">Beverages</string>
+    <string name="txt_bev">Coffee\tRs.150.00\t\t\tMojito\tRs.320.00\nMilkshake\tRs.250.00\t\t\tSoft Drinks\tRs.120.00</string>
+
+
+    <string name="txt_packages">1. Valentines Day  :  Rs.6500  2.Spend the Day  :  Rs.4000    3.Christmas Package  :  Rs.10000    4.Honeymoon Package  :  Rs.8000   </string>
+
 
 </resources>
