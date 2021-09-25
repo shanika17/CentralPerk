@@ -15,7 +15,7 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food);
 
         Button btn_orders = findViewById(R.id.btn_orders);
-        btn_orders.setOnClickListener(new View.OnClickListener() {
+        /*btn_orders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(),FoodList.class);
@@ -30,6 +30,6 @@ public class FoodActivity extends AppCompatActivity {
                 Intent intent = new Intent(view.getContext(),FoodAddActivity.class);
                 view.getContext().startActivity(intent);
             }
-        });
+        });*/
     }
 }
