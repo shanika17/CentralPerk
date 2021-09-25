@@ -28,12 +28,28 @@
 
         <activity android:name=".OfferActivity"
         <activity
+
+            android:name=".OfferCalculateActivity"
+            android:label="Calculate Discount"
+            android:parentActivityName=".OfferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FoodUpdateActivity"
+            android:exported="true"
+            android:parentActivityName=".FoodList" />
+        <activity
+            android:name=".FoodAddActivity"
+            android:exported="true"
+            android:label="Add Order"
+            android:parentActivityName=".FoodList" />
+
             android:name=".RoomUpdateActivity"
             android:parentActivityName=".RoomListActivity"></activity>
         <activity
             android:name=".RoomAddActivity"
             android:label="Book a Room"
             android:parentActivityName=".RoomListActivity" />
+
         <activity
             android:name=".RoomListActivity"
             android:label="My Bookings"
