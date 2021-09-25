@@ -25,10 +25,12 @@
         android:layout_marginBottom="28dp"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent" 
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_add_room"
-        tools:ignore="VectorDrawableCompat" />
+         />
 
     <ImageView
         android:id="@+id/empty_imageview"
