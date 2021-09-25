@@ -9,33 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
-
-        <activity 
+        <activity
             android:name=".RoomUpdateActivity"
-      ></activity>
+            android:parentActivityName=".RoomListActivity"></activity>
         <activity
             android:name=".RoomAddActivity"
             android:label="Book a Room"
-            android:parentActivityName=".RoomActivity" />
+            android:parentActivityName=".RoomListActivity" />
         <activity
             android:name=".RoomListActivity"
             android:label="My Bookings"
             android:parentActivityName=".RoomActivity" />
-
-        <activity
-            android:name=".FoodUpdateActivity"
-            android:parentActivityName=".FoodList"
-            android:exported="true" />
-        <activity
-            android:name=".FoodAddActivity"
-            android:label="Add Order"
-            android:parentActivityName=".FoodList"
-            android:exported="true" />
-        <activity
-            android:name=".FoodList"
-            android:exported="true"
-            android:label="My Orders"
-            android:parentActivityName=".FoodActivity" />
         <activity
             android:name=".OfferActivity"
             android:label="Special Offers"
