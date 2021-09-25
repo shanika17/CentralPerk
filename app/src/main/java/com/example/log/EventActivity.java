@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,8 +42,8 @@ public class EventActivity extends AppCompatActivity {
         setContentView(R.layout.activity_event);
 
         recyclerView = findViewById(R.id.recyclerView);
-        add_event_button = findViewById(R.id.add_event_button);
         empty_imageview = findViewById(R.id.empty_imageview);
+        add_event_button = findViewById(R.id.add_event_button);
         no_data = findViewById(R.id.no_data);
         add_event_button.setOnClickListener((v -> {
             Intent intent = new Intent(EventActivity.this, EventAddActivity.class);
@@ -144,4 +145,6 @@ public class EventActivity extends AppCompatActivity {
         });
         builder.create().show();
     }
+
+
 }

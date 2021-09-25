@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/bgcolor.xml" value="0.1259259259259259" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_add_event.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_baseline_error_24.xml" value="0.12314814814814815" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_delete_event.xml" value="0.1" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_empty_event.xml" value="0.1" />
-        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1259259259259259" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event.xml" value="0.22" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event_add.xml" value="0.22" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event_packages.xml" value="0.22" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event_update.xml" value="0.1" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/event_my_row.xml" value="0.1" />
         <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/menu/event_menu.xml" value="0.1" />

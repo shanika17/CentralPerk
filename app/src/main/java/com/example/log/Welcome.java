@@ -27,7 +27,7 @@ public class Welcome extends AppCompatActivity {
         btn_event.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),EventActivity.class);
+                Intent intent = new Intent(v.getContext(),EventPackages.class);
                 v.getContext().startActivity(intent);
             }
         });
@@ -59,5 +59,6 @@ public class Welcome extends AppCompatActivity {
             }
         });
     }
+
 
 }

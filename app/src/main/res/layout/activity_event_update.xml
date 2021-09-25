@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EventUpdateActivity"
-    android:padding="30dp">
+    android:padding="30dp"
+    android:background="@drawable/bgcolor">
 
     <EditText
         android:id="@+id/name_input2"

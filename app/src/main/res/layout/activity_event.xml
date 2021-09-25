@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
     tools:context=".EventActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -20,14 +21,14 @@
         android:id="@+id/add_event_button"
         android:layout_width="59dp"
         android:layout_height="58dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_add_event"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/empty_imageview"
@@ -40,16 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_empty_event"
-        tools:ignore="VectorDrawableCompat" />
+       />
 
     <TextView
         android:id="@+id/no_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:alpha="0.4"
         android:text="No data"
         android:textSize="20sp"
-        android:alpha="0.4"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
