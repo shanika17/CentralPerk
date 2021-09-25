@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_add_event.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_delete_event.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/drawable/ic_empty_event.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event_add.xml" value="0.22" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/activity_event_update.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/layout/event_my_row.xml" value="0.1" />
+        <entry key="..\:/Users/Nethmi Pelendagama/AndroidStudioProjects/CentralPerk/app/src/main/res/menu/event_menu.xml" value="0.1" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/drawable/bgcolor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/drawable/ic_add_food.xml" value="0.2703125" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/drawable/ic_baseline_error_24.xml" value="0.2546875" />
@@ -18,6 +27,7 @@
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/food_my_row.xml" value="0.6" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/menu/food_my_menu.xml" value="0.25416666666666665" />
+
       </map>
     </option>
   </component>
