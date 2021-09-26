@@ -1,3 +1,54 @@
 <resources>
     <string name="app_name">log</string>
+
+    ///food
+    <string name="btn_orders">My Orders</string>
+    <string name="btn_addOrder">Order Now</string>
+    <string name="txt_roomNo">Room :</string>
+    <string name="no_orders_to_show">No orders to show</string>
+    <string name="delete_all_food">Remove all orders</string>
+    <string name="orders_input">Enter your order</string>
+    <string name="request_input">Special requests</string>
+    <string name="room_no_input">Enter room No</string>
+    <string name="payment_method_input">Enter payment method</string>
+    <string name="add_food_button">Place Order</string>
+    <string name="update_food_button">Update Order</string>
+    <string name="delete_food_button">Remove Order</string>
+
+
+    <string name="topic_app">Appetizers</string>
+    <string name="txt_app">French Fries\tRs.320.00\t\t\tGarlic Bread\tRs.450.00\nPizza Fries\tRs.650.00\t\t\tSpicy Sausage\tRs.570.00</string>
+
+    <string name="topic_sal">Salads</string>
+    <string name="txt_sal">Chinese Salad\tRs.670.00\t\t\Green Salad\tRs.380.00\nPasta Salad\tRs.720.00\t\t\tTomato Salad\tRs.450.00</string>
+
+    <string name="topic_soup">Soups</string>
+    <string name="txt_soup">Creamy Potato\tRs.520.00\t\t\tVege Soup\tRs.460.00\nChicken Soup\tRs.430.00\t\t\tNoodle Soup\tRs.320.00</string>
+
+    <string name="topic_meal">Main Meals</string>
+    <string name="txt_meal">Fried Rice\tRs.320.00\t\t\tRice n Curry\tRs.250.00\nChicken Noodles\tRs.400.00\t\t\tKoththu \tRs.420.00</string>
+
+    <string name="topic_des">Desserts</string>
+    <string name="txt_des">Ice Cream\tRs.150.00\t\t\tChocolate Pie\tRs.320.00\nWatalappam\tRs.130.00\t\t\tCheesecake\tRs.340.00</string>
+
+    <string name="topic_bev">Beverages</string>
+    <string name="txt_bev">Coffee\tRs.150.00\t\t\tMojito\tRs.320.00\nMilkshake\tRs.250.00\t\t\tSoft Drinks\tRs.120.00</string>
+
+
+    <string name="txt_packages">1. Valentines Day  :  Rs.6500  2.Spend the Day  :  Rs.4000    3.Christmas Package  :  Rs.10000    4.Honeymoon Package  :  Rs.8000   </string>
+
+
+
+    <string name="tv_adults">: Adults</string>
+    <string name="tv_children">: Children</string>
+    <string name="tv_days">Days</string>
+
+    <string name="btn_myBookings">My Bookings</string>
+    <string name="btn_bookRoom">Book a Room</string>
+    <string name="tv_topic">Welcome to CentralPerk Room Services</string>
+    <string name="tv_welcomeNote">The best holidays start here!</string>
+    <string name="tv_singleRoom">Single Room</string>
+    <string name="tv_superior">Seperior Twin</string>
+    <string name="tv_deluxe">Deluxe Ocean View</string>
+
 </resources>

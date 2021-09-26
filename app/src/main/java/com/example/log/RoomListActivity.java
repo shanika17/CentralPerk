@@ -1,6 +1,5 @@
 package com.example.log;
 
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -18,84 +17,73 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-
-public class EventActivity extends AppCompatActivity {
+public class RoomListActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    FloatingActionButton add_event_button;
+    FloatingActionButton add_button;
     ImageView empty_imageview;
     TextView no_data;
 
-    DBmain myDatabaseHelper;
-    ArrayList<String> event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, noOfRooms, requirements;
-    EventCustomAdapter customAdapter;
+    DBmain dBmain;
+    ArrayList<String> room_id, date, room_faci, room_adults, room_children, room_days;
+    RoomCustomAdapter roomCustomAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event);
+        setContentView(R.layout.activity_room_list);
 
         recyclerView = findViewById(R.id.recyclerView);
-        add_event_button = findViewById(R.id.add_event_button);
+        add_button = findViewById(R.id.add_button);
         empty_imageview = findViewById(R.id.empty_imageview);
         no_data = findViewById(R.id.no_data);
-        add_event_button.setOnClickListener((v -> {
-            Intent intent = new Intent(EventActivity.this, EventAddActivity.class);
+        add_button.setOnClickListener((v -> {
+            Intent intent = new Intent(RoomListActivity.this, RoomAddActivity.class);
             startActivity(intent);
         }));
 
-        myDatabaseHelper = new DBmain(EventActivity.this);
-        event_id = new ArrayList<>();
-        name = new ArrayList<>();
-        email = new ArrayList<>();
-        phoneNo = new ArrayList<>();
-        noOfGuests = new ArrayList<>();
-        eventDate = new ArrayList<>();
-        eventType = new ArrayList<>();
-        noOfRooms = new ArrayList<>();
-        requirements = new ArrayList<>();
+        dBmain = new DBmain(RoomListActivity.this);
+        room_id = new ArrayList<>();
+        date = new ArrayList<>();
+        room_faci = new ArrayList<>();
+        room_adults = new ArrayList<>();
+        room_children = new ArrayList<>();
+        room_days = new ArrayList<>();
 
         storeDataInArray();
 
-        //this**
-        customAdapter = new EventCustomAdapter(EventActivity.this, this, event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, noOfRooms, requirements);
-        recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(EventActivity.this));
+        roomCustomAdapter = new RoomCustomAdapter(RoomListActivity.this,this, room_id, date, room_faci, room_adults, room_children, room_days);
+        recyclerView.setAdapter(roomCustomAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(RoomListActivity.this));
 
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1) {
             recreate();
         }
-
     }
 
+
     void storeDataInArray() {
-        Cursor cursor = myDatabaseHelper.readAllEvents();
+        Cursor cursor = dBmain.readAllBookings();
         if(cursor.getCount() == 0) {
             empty_imageview.setVisibility(View.VISIBLE);
             no_data.setVisibility(View.VISIBLE);
         }else{
             while (cursor.moveToNext()){
-                event_id.add(cursor.getString(0));
-                name.add(cursor.getString(1));
-                email.add(cursor.getString(2));
-                phoneNo.add(cursor.getString(3));
-                noOfGuests.add(cursor.getString(4));
-                eventDate.add(cursor.getString(5));
-                eventType.add(cursor.getString(6));
-                noOfRooms.add(cursor.getString(7));
-                requirements.add(cursor.getString(8));
-
-
+                room_id.add(cursor.getString(0));
+                date.add(cursor.getString(1));
+                room_faci.add(cursor.getString(2));
+                room_adults.add(cursor.getString(3));
+                room_children.add(cursor.getString(4));
+                room_days.add(cursor.getString(5));
             }
             empty_imageview.setVisibility(View.GONE);
             no_data.setVisibility(View.GONE);
@@ -105,10 +93,9 @@ public class EventActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.event_menu, menu);
+        inflater.inflate(R.menu.myroom_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -120,7 +107,6 @@ public class EventActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     void confirmDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete All?");
@@ -128,10 +114,10 @@ public class EventActivity extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                DBmain myDB = new DBmain(EventActivity.this);
-                myDB.deleteAllEvents();
+                DBmain myDB = new DBmain(RoomListActivity.this);
+                myDB.deleteAllBookings();
                 //Refresh activity
-                Intent intent = new Intent(EventActivity.this, EventActivity.class);
+                Intent intent = new Intent(RoomListActivity.this, RoomListActivity.class);
                 startActivity(intent);
                 finish();
             }
