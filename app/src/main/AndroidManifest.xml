@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
 
+        <activity android:name=".SpaAddActivity"
+            android:label="Add Details"
+            android:parentActivityName=".SpaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".OfferActivity"
+
+
 
 
         <activity
@@ -49,6 +58,7 @@
         <activity
             android:name=".OfferActivity"
 
+
             android:label="Special Offers"
             android:parentActivityName=".Welcome" />
         <activity
@@ -59,9 +69,12 @@
             android:name=".FoodActivity"
             android:label="Food"
 
+
+
             android:parentActivityName=".Welcome"/>
 
         <activity android:name=".RoomActivity"
+
 
             android:parentActivityName=".Welcome" />
         <activity
@@ -70,6 +83,9 @@
             android:parentActivityName=".Welcome" />
         <activity
             android:name=".RoomActivity"
+
+
+
 
             android:label="Rooms"
             android:parentActivityName=".Welcome" />
