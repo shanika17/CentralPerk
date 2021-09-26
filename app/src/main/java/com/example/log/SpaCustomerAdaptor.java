@@ -1,8 +1,10 @@
 package com.example.log;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -39,4 +41,19 @@ public class SpaCustomerAdaptor extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
+    void addSpa(String name, String gender, int phoneNo) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(COLUMN_NAME, name);
+        contentValues.put(COLUMN_GENDER, gender);
+        contentValues.put(COLUMN_PHONENO, phoneNo);
+        long result = db.insert(TABLE_NAME,null, contentValues);
+        if(result == -1) {
+            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(context, "Added successfully!", Toast.LENGTH_SHORT).show();
+        }
+        }
+    
 }
