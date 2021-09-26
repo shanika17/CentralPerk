@@ -38,7 +38,5 @@ public class EventAddActivity extends AppCompatActivity {
                     roomNo_input.getText().toString().trim(),
                     requirements_input.getText().toString().trim());
         });
-
     }
-
 }

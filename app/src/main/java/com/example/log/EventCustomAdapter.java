@@ -59,9 +59,8 @@ public class EventCustomAdapter extends RecyclerView.Adapter<EventCustomAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull /*@org.jetbrains.annotations.NotNull */EventCustomAdapter.myViewHolder  holder, @SuppressLint("RecyclerView") int position) {
-
-
+    public void onBindViewHolder(@NonNull /*@org.jetbrains.annotations.NotNull */EventCustomAdapter.myViewHolder  holder,
+                                 @SuppressLint("RecyclerView") int position) {
         holder.event_id_txt.setText(String.valueOf(event_id.get(position)));
         holder.name_txt.setText(String.valueOf(name.get(position)));
         holder.email_txt.setText(String.valueOf(email.get(position)));
@@ -90,8 +89,6 @@ public class EventCustomAdapter extends RecyclerView.Adapter<EventCustomAdapter.
 
             }
         });
-
-
     }
 
     @Override

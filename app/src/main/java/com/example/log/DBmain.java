@@ -59,9 +59,7 @@ public class DBmain extends SQLiteOpenHelper {
                 COLUMN_REQUIREMENTS + " TEXT); " ;
 
         db.execSQL(queryUser);
-        db.execSQL(queryEvent);
-
-    }
+        db.execSQL(queryEvent);    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) { //public void onUpgrade(SQLiteDatabase db, int i, int i1)
@@ -71,7 +69,6 @@ public class DBmain extends SQLiteOpenHelper {
         onCreate(db);
 
     }
-
     void addEvent(String name, String email, String phoneNo,
                  String noOfGuests, String eventDate, String eventType,
                  String noOfRooms, String requirements) {

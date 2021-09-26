@@ -40,11 +40,11 @@ public class EventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
-
         recyclerView = findViewById(R.id.recyclerView);
         empty_imageview = findViewById(R.id.empty_imageview);
         add_event_button = findViewById(R.id.add_event_button);
         no_data = findViewById(R.id.no_data);
+
         add_event_button.setOnClickListener((v -> {
             Intent intent = new Intent(EventActivity.this, EventAddActivity.class);
             startActivity(intent);
@@ -63,11 +63,11 @@ public class EventActivity extends AppCompatActivity {
 
         storeDataInArray();
 
-        //this**
-        customAdapter = new EventCustomAdapter(EventActivity.this, this, event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, noOfRooms, requirements);
+        customAdapter = new EventCustomAdapter(EventActivity.this, this,
+                event_id, name, email, phoneNo, noOfGuests, eventDate, eventType,
+                noOfRooms, requirements);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(EventActivity.this));
-
     }
 
     @Override
@@ -145,6 +145,4 @@ public class EventActivity extends AppCompatActivity {
         });
         builder.create().show();
     }
-
-
 }
