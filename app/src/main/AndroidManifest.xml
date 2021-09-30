@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
         <activity
+            android:name=".EventOfferCalculate"
+            android:exported="true" />
+        <activity
+            android:name=".EventOfferCalcuate"
+            android:exported="true" />
+        <activity
             android:name=".EventPackages"
             android:exported="true" />
         <activity

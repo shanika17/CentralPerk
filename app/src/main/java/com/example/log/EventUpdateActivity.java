@@ -54,19 +54,78 @@ public class EventUpdateActivity extends AppCompatActivity {
             ab.setTitle(eventType);
         }
 
-        update_event_button.setOnClickListener(v -> {
-            //and only then we call this
-            DBmain myDatabaseHelper = new DBmain(EventUpdateActivity.this);
-            name =  name_input.getText().toString().trim();
-            email = email_input.getText().toString().trim();
-            phoneNo = phoneNo_input.getText().toString().trim();
-            noOfGuests = noOfGuests_input.getText().toString().trim();
-            eventDate = eventDate_input.getText().toString().trim();
-            eventType = eventType_input.getText().toString().trim();
-            roomNo = roomNo_input.getText().toString().trim();
-            requirements =requirements_input.getText().toString().trim();
-            myDatabaseHelper.updateEvent(event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, roomNo, requirements);
+        update_event_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                DBmain myDatabaseHelper = new DBmain(EventUpdateActivity.this);
+                name = name_input.getText().toString().trim();
+                email = email_input.getText().toString().trim();
+                phoneNo = phoneNo_input.getText().toString().trim();
+                noOfGuests = noOfGuests_input.getText().toString().trim();
+                eventDate = eventDate_input.getText().toString().trim();
+                eventType = eventType_input.getText().toString().trim();
+                roomNo = roomNo_input.getText().toString().trim();
+                requirements = requirements_input.getText().toString().trim();
+
+                String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+                String phonePattern = "^[0-9]{10}$";
+
+                //name
+                if (name.isEmpty()) {
+                    name_input.setError("Name is required");
+                }
+                //for email
+                else if (!email.matches(emailPattern)) {
+                    email_input.setError("Invalid email address");
+                }
+
+                //for phone
+                else if (!phoneNo.matches(phonePattern)) {
+                    phoneNo_input.setError("Invalid phone number");
+                }
+
+                //empty fields for each and other validations
+                //name
+                else if (name.isEmpty()) {
+                    name_input.setError("Name is required");
+                }
+
+                //email
+                else if (email.isEmpty()) {
+                    email_input.setError("Email address is required");
+                }
+
+                //phone
+                else if (phoneNo.isEmpty()) {
+                    phoneNo_input.setError("Phone number is required");
+                }
+
+                //NoOfGuests
+                else if (noOfGuests.isEmpty()) {
+                    noOfGuests_input.setError("Number of guests is required");
+                }
+
+                //EventDate
+                else if (eventDate.isEmpty()) {
+                    eventDate_input.setError("Event date is required");
+                }
+
+                //EventType
+                else if (eventType.isEmpty()) {
+                    eventType_input.setError("Event type is required");
+                }
+
+                //Room No
+                else if (roomNo.isEmpty()) {
+                    roomNo_input.setError("Room number is required");
+                }
+
+                //or otherwise
+                else {
+                    myDatabaseHelper.updateEvent(event_id, name, email, phoneNo, noOfGuests, eventDate, eventType, roomNo, requirements);
+                }
+            }
         });
 
         delete_event_button.setOnClickListener(new View.OnClickListener() {
