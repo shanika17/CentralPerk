@@ -44,20 +44,26 @@ public class FoodUpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 DBmain myDB = new DBmain(FoodUpdateActivity.this);
-                ///
                 orders = orders_input.getText().toString().trim();
                 request = request_input.getText().toString().trim();
                 roomNo = room_no_input.getText().toString().trim();
                 paymentMethod = payment_method_input.getText().toString().trim();
-                ///
-                if(orders.equals("") || request.equals("") || roomNo.equals("") || paymentMethod.equals("") || (orders.length() > 20)){
-                    if(request.length() > 20)
-                        Toast.makeText(FoodUpdateActivity.this, "Please limit request to 20 characters", Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(FoodUpdateActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
 
-                }else {
-                    //and then only we can call this
+
+                if(orders.isEmpty())
+                    orders_input.setError("Fill Order");
+                else if(request.isEmpty())
+                    request_input.setError("Fill Request");
+                else if(request.length() > 20)
+                    request_input.setError("20 characters only");
+                else if(roomNo.isEmpty())
+                    room_no_input.setError("Fill room No");
+                else if(!roomNo.matches("[0-9]+"))
+                    room_no_input.setError("Numbers only");
+                else if(paymentMethod.isEmpty())
+                    payment_method_input.setError("Fill payment method");
+
+                else {
                     myDB.updateFood(foodId, orders, request, roomNo, paymentMethod);
                 }
             }
@@ -68,7 +74,6 @@ public class FoodUpdateActivity extends AppCompatActivity {
                 confirmDialog();
             }
         });
-
     }
 
     void getAndSetIntentData(){
@@ -87,9 +92,7 @@ public class FoodUpdateActivity extends AppCompatActivity {
             room_no_input.setText(roomNo);
             payment_method_input.setText(paymentMethod);
 
-            ////
-            // Log.d("stev", title+" "+author+" "+pages);
-            ////
+
         }else{
             Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
         }

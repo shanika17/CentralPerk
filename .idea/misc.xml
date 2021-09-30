@@ -7,14 +7,21 @@
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/drawable/ic_add_food.xml" value="0.2703125" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/drawable/ic_baseline_error_24.xml" value="0.2546875" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/drawable/ic_emptydata_food.xml" value="0.2703125" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_event.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_event_offer_calculate.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_food.xml" value="0.4" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_food_add.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_food_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_food_offer_calculate.xml" value="0.264" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_food_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_login_form.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_offer.xml" value="0.264" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_offer_claculate.xml" value="0.264" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_room.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_room_offer_calculate.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_spa.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_spa_offer_calculate.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/layout/food_my_row.xml" value="0.6" />
         <entry key="..\:/Users/Devangi/DeVaNgI_Files/MyAndroid/CentralPerk/app/src/main/res/menu/food_my_menu.xml" value="0.25416666666666665" />

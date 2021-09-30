@@ -15,11 +15,38 @@ public class OfferActivity extends AppCompatActivity {
         setContentView(R.layout.activity_offer);
 
 
-        Button btn_viewDiscount = findViewById(R.id.btn_viewDiscount);
-        btn_viewDiscount.setOnClickListener(new View.OnClickListener() {
+        Button btn_eventDiscount = findViewById(R.id.btn_eventDiscount);
+        btn_eventDiscount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), OfferCalculateActivity.class);
+                Intent intent = new Intent(v.getContext(), EventOfferCalculate.class);
+                v.getContext().startActivity(intent);
+            }
+        });
+
+        Button btn_roomDiscount = findViewById(R.id.btn_roomDiscount);
+        btn_roomDiscount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RoomOfferCalculate.class);
+                v.getContext().startActivity(intent);
+            }
+        });
+
+        Button btn_foodDiscount = findViewById(R.id.btn_foodDiscount);
+        btn_foodDiscount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), FoodOfferCalculate.class);
+                v.getContext().startActivity(intent);
+            }
+        });
+
+        Button btn_spaDiscount = findViewById(R.id.btn_spaDiscount);
+        btn_spaDiscount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), SpaOfferCalculate.class);
                 v.getContext().startActivity(intent);
             }
         });

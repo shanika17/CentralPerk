@@ -10,18 +10,18 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 public class DBmain extends SQLiteOpenHelper {
-    private Context context; //added
-    private static final String DATABASE_NAME = "CentralPerkR.db";//added
-    private static final int DATABASE_VERSION = 1;//added
+    private Context context;
+    private static final String DATABASE_NAME = "CentralPerkR.db";
+    private static final int DATABASE_VERSION = 1;
 
 //food
     private static final String TABLE_NAME_FOOD = "food";
-    private static final String COLUMN_ID = "_id"; /////***
+    private static final String COLUMN_ID = "_id";
     private static final String COLUMN_ORDERS = "orders";
     private static final String COLUMN_REQUEST = "request";
     private static final String COLUMN_ROOM_NO = "room_no";
     private static final String COLUMN_PAYMENT_METHOD = "payment_method";
-////
+
 //user
     private static final String TABLE_NAME_USER = "users";
     private static final String COLUMN_USERNAME = "username";

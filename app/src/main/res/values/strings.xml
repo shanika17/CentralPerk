@@ -34,7 +34,13 @@
     <string name="txt_bev">Coffee\tRs.150.00\t\t\tMojito\tRs.320.00\nMilkshake\tRs.250.00\t\t\tSoft Drinks\tRs.120.00</string>
 
 
-    <string name="txt_packages">1. Valentines Day  :  Rs.6500  2.Spend the Day  :  Rs.4000    3.Christmas Package  :  Rs.10000    4.Honeymoon Package  :  Rs.8000   </string>
+
+    <string name="food_offer_description">aaa</string>
+    <string name="food_tv1">Meal package</string>
+    <string name="food_tv2">Beverage Package</string>
+    <string name="food_tv3">Quantity</string>
+    <string name="bev_packs">Beverage\n\n1.Happy Hour\n2.Fruit Blast\n3.Holiday Coffee\n4.Smoothie Monday</string>
+    <string name="food_packs">Food\n\n1.Chinese Combo\n2.Spice n Rice\n3.Snack Attack\n4.Pizza Delight</string>
 
 
 </resources>

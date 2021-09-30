@@ -108,7 +108,7 @@ public class FoodList extends AppCompatActivity {
     void confirmDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete All?");
-        builder.setMessage("Are you sure you want to delete all data?");
+        builder.setMessage("Are you sure you want to delete all orders?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {

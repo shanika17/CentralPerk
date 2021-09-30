@@ -1,4 +1,4 @@
-/**package com.example.log;
+package com.example.log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-////not used
-public class OfferCalculateActivity extends AppCompatActivity {
+
+public class EventOfferCalculate extends AppCompatActivity {
 
     EditText et_event_one, et_event_two, et_event_three, et_event_four;
     Button event_btn_calculate;
@@ -19,7 +19,7 @@ public class OfferCalculateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_offer_claculate);
+        setContentView(R.layout.activity_event_offer_calculate);
 
         et_event_one = findViewById(R.id.event_input_1);
         et_event_two = findViewById(R.id.event_input_2);
@@ -28,8 +28,8 @@ public class OfferCalculateActivity extends AppCompatActivity {
 
         event_btn_calculate = findViewById(R.id.event_btn_calculate);
         event_answer = findViewById(R.id.event_answer);
-
     }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -45,7 +45,7 @@ public class OfferCalculateActivity extends AppCompatActivity {
         String event_one, event_two, event_three, event_four;
         int Event_one, Event_two, Event_three, Event_four;
 
-        Calculations cal = new Calculations();
+        EventCalculation cal = new EventCalculation();
 
         event_one = et_event_one.getText().toString();
         event_two = et_event_two.getText().toString();
@@ -61,11 +61,10 @@ public class OfferCalculateActivity extends AppCompatActivity {
             Event_three = Integer.parseInt(event_three);
             Event_four = Integer.parseInt(event_four);
 
-            String answer = cal.calculateDiscount(Event_one, Event_two, Event_three, Event_four);
+            String answer = cal.calculateEventDiscount(Event_one, Event_two, Event_three, Event_four);
 
             event_answer.setText(answer);
         }
 
     }
-
-}**/
+}

@@ -1,3 +1,4 @@
+/*
 package com.example.log;
 
 public class Calculations {
@@ -106,3 +107,4 @@ public class Calculations {
         return answer;
     }
 }
+*/

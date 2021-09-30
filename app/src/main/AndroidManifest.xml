@@ -10,10 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Log">
         <activity
-            android:name=".OfferCalculateActivity"
-            android:label="Calculate Discount"
-            android:parentActivityName=".OfferActivity"
+            android:name=".SpaOfferCalculate"
             android:exported="true" />
+        <activity
+            android:name=".FoodOfferCalculate"
+            android:parentActivityName=".OfferActivity"
+            android:label="Food Offers"
+            android:exported="true" />
+        <activity
+            android:name=".RoomOfferCalculate"
+            android:exported="true" />
+        <activity
+            android:name=".EventOfferCalculate"
+            android:exported="true" />
+
         <activity
             android:name=".FoodUpdateActivity"
             android:exported="true"
